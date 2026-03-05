@@ -1,0 +1,25 @@
+/*
+* File: app.css
+* Author: Vámosi László Ádám
+* Copyright: 2026, Vámosi László Ádám
+* Group: SZOFT II-N
+* Date: 2026-03-05
+* GitHub: https://github.com/vamosilaszloadam/
+* Licenc: MIT
+*/
+
+.nav-link {
+    border: 2px solid gold;
+    background-color: lightcyan;
+    box-shadow: 5px 5px 5px gray;
+    text-shadow: 1px 2px 10px gray;
+}
+
+.nav-link:hover {
+    color: aqua;
+    background-color: #1976d2;
+}
+
+.nav-link:active {
+    opacity: 0.5;
+}

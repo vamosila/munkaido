@@ -1,0 +1,58 @@
+/*
+* File: work.component.css
+* Author: Vámosi László Ádám
+* Copyright: 2026, Vámosi László Ádám
+* Group: SZOFT II-N
+* Date: 2026-03-05
+* GitHub: https://github.com/vamosilaszloadam/
+* Licenc: MIT
+*/
+
+.form-control.ng-invalid.ng-touched {
+    border: 2px solid darkred;
+    border-left: 5px solid darkred;
+}
+
+.form-control.ng-valid {
+    border: 2px solid lime;
+    border-left: 5px solid lime;
+}
+
+button {
+    box-shadow: 5px 5px 5px gray;
+    text-shadow: 1px 2px 3px lightgray;
+    cursor: pointer;
+    pointer-events: auto;
+    width: 100%;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    pointer-events: unset;
+}
+
+.text-danger {
+    color: darkred !important;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px orangered;
+    letter-spacing: 0.8px;
+    font-size: 11px;
+}
+
+input {
+    box-shadow: 5px 5px 5px gray;
+    text-shadow: 1px 2px 3px lightgray;
+    background-color: lightcyan;
+}
+
+form {
+    max-width: 432px;
+}
+
+div, form {
+    margin: 0 auto;
+}
+
+sup {
+    margin-right: 0.5rem;
+}

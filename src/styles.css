@@ -1,1 +1,90 @@
+/*
+* File: styles.css
+* Author: Vámosi László Ádám
+* Copyright: 2026, Vámosi László Ádám
+* Group: SZOFT II-N
+* Date: 2026-03-05
+* GitHub: https://github.com/vamosilaszloadam/
+* Licenc: MIT
+*/
+
 /* You can add global styles to this file, and also import other style files */
+
+@import 'bootstrap';
+
+html, body {
+    user-select: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    color: white;
+    text-shadow: 1px 2px 10px black;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+
+    width: 200vmax;
+    height: 200vmax;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    will-change: transform;
+
+    background: linear-gradient(
+        45deg,
+        #ab47bc,
+        #e040fb,
+        #ff7a00,
+        #dd0031
+    );
+
+    animation: rotateGradient 20s linear infinite;
+    filter: blur(50px);
+    z-index: -1;
+}
+
+@keyframes rotateGradient {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5rem;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.swal2-title {
+    text-shadow: 1px 2px 3px gray;
+}
+
+.swal2-success-ring {
+    box-shadow: 2px 2px 25px green;
+}
+
+@media screen and (max-width: 320px) {
+    .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+    
+    h1 {
+        letter-spacing: normal;
+    }
+}
